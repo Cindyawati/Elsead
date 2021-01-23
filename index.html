@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Web portofolio tailwind">
+        <meta name="keyword" content="tailwindcss, CSS, tailwind">
+        <meta name="author" content="codepolitan">
+        <title>Elsead</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> <!--Tailwind-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+                
+        <style>
+            .gradient
+            {
+                background-image: linear-gradient(to bottom right, #4C51BF, #702459);
+            }
+
+            .gradient-skill
+            {
+                background-image: linear-gradient(#ccb075, #702459);
+            }
+            .gradient-bottom
+            {
+                background-image: linear-gradient(#4C51BF,#702459);
+            }
+            .container-fluid-max 
+            {
+                    max-width: 1440px;
+            }
+            .service-style
+            {
+                margin-top: 15px;
+                background-color: transparent;
+            }
+            .text-blue
+            {
+                color:#4C51BF;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!--layout-->
+        <section class="w-screen mx-auto px-4">
+            <nav class="flex flex-wrap p-6 justify-between">
+                <div class="flex flex-shrink-0 mr-6">
+                    <img src="" class="h-10 w-50 mr-2"><!--Logo-->
+                </div>
+                <div class="block lg:hidden">
+                    <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+                        <svg class="fill-current h-3 w-3" viewBox=" 0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                    <div class="text-sm lg:flex-grow">
+                        <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4 ">
+                            Home
+                        </a>
+                        <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4 ">
+                            Services
+                        </a>
+                        <a href="#product" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4 ">
+                            Product
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#contact" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="home" class="w-screen mx-auto py-4 gradient">
+            <div class="px-16 py-8 text-white text-center">
+                <h1 class="w-full text-5xl font-bold">Hello There !</h1>
+                
+                <div class=" mb-4">
+                    <div class="bg-pink-500 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto "></div>
+                </div>
+                
+                <h2 class="text-3xl font-bold mb-2">
+                    We are Elsead. Nice to meet you.
+                </h2>
+                
+                <h3 class="text-lg mb-2">
+                    This is the Elsead shopping catalog, enjoy your time while looking at the products we provide !
+                </h3>
+            </div>
+        </section>
+
+        <!--Services-->
+        <section id="services" class="w-screen mx-auto py-4 bg-white px-4 mt-6">
+            <div class="text-center mb-8">
+                <h1 class="w-full my-2 text-5xl font-bold text-gray-700">Services</h1>
+                   <div class="mb-4">
+                      <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
+                    </div>
+             </div>
+             <p class="text-lg m-4 text-gray-600 text-center">Why do you have to shop at Elsead ?</p>
+
+             <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-6 rounded-lg">
+
+                <!--Box 1 / Programming-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                    <i class="fas fa-seedling fa-5x text-blue-800 mb-6"></i>
+                    
+                        <div class="p-4 ">
+                            <p class="font-bold text-lg md:text-xl mb-6">Comfortable Material</p>
+                            <p class="text-gray-600 text-base mb-2">We use comfortable and trendy materials to make you look cooler when you use them!</p>
+                            <hr class="text-gray-600 mb-2">
+                        </div>
+                </div>
+
+                <!--Box 2 / Design-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white-500 m-3 text-center">
+                    <i class="fas fa-shipping-fast fa-5x text-purple-800 mb-6"></i>
+                        <div class="p-4 ">
+                            <p class="font-bold text-lg md:text-xl mb-6">On Time Delivery</p>
+                            <p class="text-gray-600 text-base mb-2">After you complete the payment, the goods will be sent immediately and arrive on time with good condition</p>
+                            <hr class="text-gray-600 mb-2">
+                        </div>
+                </div>
+                
+                <!--Box 3 / Database-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white-500 m-3 text-center">
+                    <i class="fas fa-hand-holding-usd fa-5x text-pink-800 mb-6"></i>
+                        <div class="p-4 ">
+                            <p class="font-bold text-lg md:text-xl mb-6">Affordable Cost</p>
+                            <p class="text-gray-600 text-base mb-2">We provide quality goods at affordable prices, suitable for teenagers!</p>
+                            <hr class="text-gray-600 mb-2">  
+                        </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Recent Work-->
+        <section id="product" class="w-screen mx-auto bg-white">
+            <div class="text-center mb-8">
+                <h1 class="w-full my-2 text-5xl font-bold text-gray-700">Our Product</h1>
+                   <div class="mb-4">
+                      <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded">
+                       </div>
+                    </div>
+             </div>
+
+             <p class="text-lg m-4 text-gray-600 text-center">Here are the items in our catalog.</p>
+             <p class="text-lg m-4 text-gray-600 text-center">Have a nice look at our products, enjoy!</p>
+
+             <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 mb-20">
+                
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Coklat.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Coklat</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                        <!-- BUTTON
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg mt-4">
+                            Detail
+                        </button>
+                        -->
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Hijau.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Coklat</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Hitam.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Hitam</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Putih.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Putih</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Pink.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Pink</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Pashmina/Pashmina Ungu.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pashmina Ungu</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Triangle/Segiempat Putih.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Segiempat Putih</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Triangle/Segiempat Hitam.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Segiempat Hitam</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Triangle/Segiempat Coklat.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Segiempat Coklat</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Triangle/Segiempat Coklat Muda.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Segiempat Coklat Muda</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white-500 px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="img/Triangle/Segiempat Abu-abu.png" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Segiempat Abu-Abu</p>
+                        <p class="text-gray-700 text-base">Rp.25.000</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Of Recent Project-->
+
+        <!--Contact Me-->
+        <section id="contact" class="w-screen mx-auto py-4 gradient-bottom">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact</h1>
+            <div class="mb-4">
+                <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/6 opacity-75 my-0 py-0 rounded"></div>
+            </div>
+        </section>
+        <!--End of Contact Me-->
+
+        <section class="w-screen mx-auto py-4 bg-white mt-4 mb-4">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 rounded-lg">
+                <!--Box 1 / Email-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center ">
+                    <i class="far fa-envelope fa-4x text-blue-800 hover:text-indigo-900 mt-6 mb-3"></i>
+                        <div class="p-4">
+                            <p class="font-bold text-lg md:text-xl mb-6">Email</p>
+                        </div>
+                </div>
+
+                <!--Box 2 / WhatsApp-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center ">
+                    <i class="fab fa-whatsapp fa-4x text-purple-800 hover:text-indigo-900 mt-6 mb-3"></i>
+                        <div class="p-4">
+                            <p class="font-bold text-lg md:text-xl mb-6">WhatsApp</p>
+                        </div>
+                </div>
+
+                <!--Box 3 / Instagram-->
+                <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center ">
+                    <i class="fab fa-instagram fa-4x text-pink-800 hover:text-indigo-900 mt-6 mb-3"></i>
+                        <div class="p-4">
+                            <p class="font-bold text-lg md:text-xl mb-6">Instagram</p>
+                        </div>
+                </div>
+            </div>
+        </section>    
+        <section>
+            <footer style="background-color: rgb(0, 0, 0); height:70px; color: white;">
+                   <p class="text-center text-secondary" style="padding-top: 25px;">Copyright &#169 Elsead 2020</p> 
+             </footer>
+        </section> 
+    </body>
+ </html>
